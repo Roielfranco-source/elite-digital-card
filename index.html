@@ -7,33 +7,60 @@
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon" href="icon-192.png">
-    
+    <link rel="apple-touch-icon" href="logo.png">
     <link rel="manifest" href="manifest.json">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-card">
-        <img src="logo.png" alt="Logo Elite Cleaners" class="logo">
-        <h1>Elite Cleaners Company</h1>
-        <p class="location">📍 Pleasanton, California</p>
 
-        <div class="button-group">
-            <a href="tel:+1XXXXXXXXXX" class="btn primary">📞 LLAMAR AHORA</a>
-            <a href="https://wa.me/1XXXXXXXXXX" class="btn secondary">💬 WHATSAPP</a>
-            <a href="mailto:tu-correo@ejemplo.com" class="btn secondary">📧 EMAIL</a>
+    <div class="app-container">
+        
+        <div class="profile-header">
+            <img src="logo.png" alt="Elite Cleaners Company" class="profile-img">
+            <div class="title-bar">Elite Cleaners Company</div>
         </div>
 
-        <div class="social-icons">
-            <p>Siguenos en redes sociales</p>
+        <div class="action-buttons">
+            <a href="tel:+1XXXXXXXXXX" class="btn-action">
+                <span>📞</span>
+                Add to contacts
+            </a>
+            <a href="https://wa.me/1XXXXXXXXXX" class="btn-action">
+                <span>➕</span>
+                Share my info
+            </a>
         </div>
+
+        <p class="section-title">Social media</p>
+        <div class="social-grid">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" class="social-icon" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" class="social-icon" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" class="social-icon" alt="LinkedIn"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3046/3046121.png" class="social-icon" alt="TikTok"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" class="social-icon" alt="YouTube"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" class="social-icon" alt="Snapchat"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" class="social-icon" alt="X"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png" class="social-icon" alt="Pinterest"></a>
+        </div>
+
+        <div class="payments-section">
+            <p class="section-title">Payments</p>
+            <div class="payment-icons">
+                <img src="https://cdn-icons-png.flaticon.com/128/14719/14719283.png" class="payment-icon" alt="Venmo">
+                <img src="https://cdn-icons-png.flaticon.com/128/174/174861.png" class="payment-icon" alt="PayPal">
+                <img src="https://cdn-icons-png.flaticon.com/128/16144/16144018.png" class="payment-icon" alt="Zelle">
+                <img src="https://cdn-icons-png.flaticon.com/128/6001/6001905.png" class="payment-icon" alt="CashApp">
+            </div>
+        </div>
+
     </div>
 
     <script>
-        // Registro del Service Worker (necesario para PWA)
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js');
         }
     </script>
+
 </body>
 </html>
