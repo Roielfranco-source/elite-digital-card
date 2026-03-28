@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Elite Cleaners Company</title>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-card">
+        <img src="logo.png" alt="Logo Elite Cleaners" class="logo">
+        <h1>Elite Cleaners Company</h1>
+        <p class="location">📍 Pleasanton, California</p>
+
+        <div class="button-group">
+            <a href="tel:+1XXXXXXXXXX" class="btn primary">📞 LLAMAR AHORA</a>
+            <a href="https://wa.me/1XXXXXXXXXX" class="btn secondary">💬 WHATSAPP</a>
+            <a href="mailto:tu-correo@ejemplo.com" class="btn secondary">📧 EMAIL</a>
+        </div>
+
+        <div class="social-icons">
+            <p>Siguenos en redes sociales</p>
+        </div>
+    </div>
+
+    <script>
+        // Registro del Service Worker (necesario para PWA)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
